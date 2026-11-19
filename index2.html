@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Document.html</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <style type="text/tailwindcss">
+        @theme {
+            --font-mono: "Roboto Mono", monospace;
+        }
+        @layer base {
+            h2 {@apply text-3xl font-bold}
+            h5 {@apply text-lg font-semibold}
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+</head>
+<body class="font-mono">
+    <h2 class="text-amber-900 mb-auto text-center">Registration Form</h2>
+    <br><br>
+
+    <form action="/action.php">
+        <input type="text" placeholder="username">
+        <br>
+        <br>
+        <input type="password" placeholder="password">
+        <br><br>
+
+    <h5 class="bg-sky-800 hover:bg-sky-600 hover:text-red-500">Select your class</h5>
+        <label for="101">
+            <input type="radio" value="class XI" name="class" id="101"> class XI
+        </label>
+        <br><br>
+        <label for="102">
+            <input type="radio" value="class XII" name="class" id="102"> class XII
+        </label>
+        <br><br>
+
+        <h5 class="bg-sky-800 hover:bg-sky-600">Select Favrouit Subject</h5>
+        <label for="103">
+            <input type="checkbox" value="math" name="subject" id="103"> Math
+        </label>
+        <br><br>
+        <label for="104">
+            <input type="checkbox" value="phy" name="subject" id="104"> Physics
+        </label>
+        <br><br>
+        <label for="105">
+            <input type="checkbox" value="che" name="subject" id="105"> Chemistry
+        </label>
+        <br><br>
+        <label for="106">
+            <input type="checkbox" value="bio" name="subject" id="106"> Biology
+        </label>
+        <br><br>
+        Select your city
+        <select name="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Patna">Patna</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Indore">Indore</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Surat">Surat</option>
+            <option value="Ranchi">Ranchi</option>
+            <option value="Patiala">Patiala</option>
+            <option value="Amritsar">Amritsar</option>
+
+        </select>
+        <br><br>
+
+        <textarea name="feedback" id="107" placeholder="Enter your feedback here..." rows=5 ></textarea>
+        <br>
+
+        <input type="submit" value="Submit">
+        </form>
+
+<!-- <iframe src="https://www.wikipedia.org/" width="600" height="400" title="Iframe Example"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ocRzt5NvI7A?si=nFkp1FB4nr94fnyh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<video width="600" height="400" src="/Users/vickykumar/Desktop/ScreenShorts/Screen Recording 2026-09-30 at 2.56.18 PM.mov" controls ></video> -->
+
+   
+</body>
+</html>
